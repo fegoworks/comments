@@ -143,7 +143,7 @@ class CommentController {
   static async deleteComment(req, res) {
     try {
       const {
-        CommentId: id
+        commentId: id
       } = req.params;
 
       const comment = await Comment.findByPk(id);

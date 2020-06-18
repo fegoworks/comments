@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import env from 'dotenv';
 import userRoute from './routes/user.route';
 import commentRoute from './routes/comment.route';
+import replyRoute from './routes/reply.route';
 
 env.config();
 const port = process.env.PORT || 3000;
@@ -35,6 +36,7 @@ app.use(cookieParser());
 // Routes here
 app.use('/api/v1/', userRoute);
 app.use('/api/v1/', commentRoute);
+app.use('/api/v1/', replyRoute);
 
 app.get('/', (req, res) => {
   res.send(`<h1>Welcome to the ----- Application</h1>
