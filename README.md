@@ -82,8 +82,8 @@ npm run test
 
 ### API endpoints
 
-Heroku: [Comments-Fg](https://comments-fg.herokuapp.com/)
-Documentation: [Essay-Checker-API-Docs]()
+Heroku: [Comments](https://comments-fg.herokuapp.com/)
+Documentation: [Comments-API-Docs]()
 
 | Endpoints                         | Functionality                           |
 | --------------------------------- | --------------------------------------- |
