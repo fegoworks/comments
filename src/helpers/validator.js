@@ -49,6 +49,16 @@ const validator = {
         .required()
         .error(new Error('Password is required')),
     }),
+    commentSchema: Joi.object().keys({
+      comment: Joi.string()
+        .required()
+        .error(new Error('Comment is required')),
+    }),
+    replySchema: Joi.object().keys({
+      reply: Joi.string()
+        .required()
+        .error(new Error('Comment is required')),
+    })
   },
 };
 

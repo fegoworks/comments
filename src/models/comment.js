@@ -6,6 +6,10 @@ module.exports = (Sequelize, DataTypes) => {
       required: true,
       primaryKey: true
     },
+    userId: {
+      type: DataTypes.UUID,
+      required: true,
+    },
     comment: {
       type: DataTypes.STRING,
       required: true,
