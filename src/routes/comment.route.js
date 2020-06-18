@@ -11,11 +11,9 @@ router.post('/comments/',
   CommentController.addComment);
 
 router.get('/comments/',
-  verifyToken.verify,
   CommentController.getComments);
 
 router.get('/comments/:commentId/',
-  verifyToken.verify,
   CommentController.getCommentById);
 
 router.patch('/comments/:commentId',
